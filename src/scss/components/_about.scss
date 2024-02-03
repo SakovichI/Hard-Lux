@@ -1,0 +1,25 @@
+.about {
+  &__wrap {
+    margin: 0 auto;
+    padding: 128px 0;
+    max-width: 1100px;
+    text-align: center;
+  }
+
+  &__title {
+      margin-bottom: 34px;
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 815px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--black);
+    &--underline {
+      border-bottom: 2px solid #015c75;
+    }
+  }
+}

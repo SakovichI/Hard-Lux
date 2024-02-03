@@ -1,0 +1,37 @@
+.header {
+  &__wrap{
+    position: absolute;
+    top: 41px;
+    left: 94px;
+    right: 64px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    font-family: Oswald, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__lang {
+  }
+
+  &__lang-link {
+    display: inline-block;
+    padding: 0 12px;
+    font-family: Onest, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    //border-right: 1px solid #e6e6e6;
+  }
+}
+
+.container {
+}

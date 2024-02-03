@@ -1,0 +1,118 @@
+.callback {
+  &__wrap {
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__head {
+    max-width: 489px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #0e1016;
+  }
+
+  &__form {
+    flex: 1 1 auto;
+    max-width: 660px;
+  }
+}
+
+.form {
+  &__row {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+  }
+
+  &__label {
+    flex: 1 1 50%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+    border: 1px solid transparent;
+    transition: .2s ease-in;
+    &:focus{
+      outline: none;
+      border: 1px solid var(--blue);
+      transition: .2s ease-in;
+    }
+    &::placeholder{
+      font-family: "Onest", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #727272;
+    }
+  }
+  &__textarea{
+    width: 100%;
+    height: 104px;
+    resize: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+    border: 1px solid transparent;
+    transition: .2s ease-in;
+    &:focus{
+      outline: none;
+      border: 1px solid var(--blue);
+      transition: .2s ease-in;
+    }
+    &::placeholder{
+      font-family: "Onest", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #727272;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+    padding: 14px 100px;
+    font-family: "Onest", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background: #015c75;
+    transition: .2s ease-in;
+    &:focus{
+      outline: none;
+      background: #004d5f;
+      transition: .2s ease-in;
+    }
+    &:hover{
+        outline: none;
+        background: #004d5f;
+        transition: .2s ease-in;
+    }
+  }
+}
+

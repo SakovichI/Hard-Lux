@@ -1,0 +1,38 @@
+.country {
+  &__wrap {
+    margin-bottom: 128px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    border-radius: 10px;
+  }
+
+  &__img {
+
+  }
+
+  &__item-text {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    padding: 5px 16px;
+    background: rgba(217, 217, 217, 0.5);
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+  }
+}
+

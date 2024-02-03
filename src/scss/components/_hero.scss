@@ -1,0 +1,18 @@
+.hero {
+  &__wrap{
+    padding: 378px 0;
+    background: url("../img/hero-fon.png") no-repeat center;
+    background-size: cover;
+    border-radius: 30px;
+  }
+  &__title{
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1033px;
+  }
+}
+
+.container {
+}
+
+
