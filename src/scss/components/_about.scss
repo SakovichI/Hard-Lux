@@ -23,3 +23,53 @@
     }
   }
 }
+@media all and (max-width: 800px) {
+  .about {
+    &__wrap {
+      margin: 0 auto;
+      padding: 120px 0;
+    }
+
+    &__title {
+      margin-bottom: 34px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      max-width: 815px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 133%;
+      text-align: center;
+      color: var(--black);
+      &--underline {
+        border-bottom: 2px solid #015c75;
+      }
+    }
+  }
+}
+@media all and (max-width: 500px) {
+  .about {
+    &__wrap {
+      margin: 0 auto;
+      padding: 72px 0;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      max-width: 815px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 137%;
+      text-align: center;
+      color: #0e1016;
+      &--underline {
+        border-bottom: 2px solid #015c75;
+      }
+    }
+  }
+}

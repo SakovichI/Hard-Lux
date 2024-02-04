@@ -1,7 +1,7 @@
 .header {
-  &__wrap{
+  &__wrap {
     position: absolute;
-    top: 41px;
+    top: 73px;
     left: 94px;
     right: 64px;
     z-index: 2;
@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &__logo {
     font-family: Oswald, sans-serif;
     font-weight: 500;
@@ -33,5 +34,37 @@
   }
 }
 
-.container {
+@media all and (max-width: 800px) {
+  .header {
+    &__wrap {
+      position: absolute;
+      top: 73px;
+      left: 88px;
+      right: 88px;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media all and (max-width: 500px) {
+  .header {
+    &__wrap {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      right: 40px;
+    }
+
+    &__logo {
+      font-family: Oswald, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+  }
 }

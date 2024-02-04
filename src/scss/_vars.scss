@@ -3,7 +3,7 @@
 :root {
   // base
   --font-family: "Onest", sans-serif;
-  --content-width: 1440px;
+  --content-width: 1344px;
   --container-offset: 48px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
@@ -13,4 +13,9 @@
   --black: #0e1016;
   --input: #727272;
   --blue: #015c75;
+}
+@media all and (max-width: 500px) {
+  :root{
+    --container-offset: 16px;
+  }
 }
