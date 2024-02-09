@@ -10,6 +10,15 @@
   }
 
   &__column {
+    &:nth-child(1){
+      flex: 1 1 50%
+    }
+    &:nth-child(2){
+      flex: 1 1 25%
+    }
+    &:nth-child(3){
+      flex: 1 1 25%
+    }
   }
 
   &__column-wrap{
@@ -36,13 +45,13 @@
     font-size: 14px;
     line-height: 136%;
     color: #bababa;
+    &--nowrap{
+      white-space: nowrap;
+    }
     &:not(:last-child){
       margin-bottom: 12px;
     }
-    & iframe{
-      border: none;
-      border-radius: 10px;
-    }
+
   }
 
   &__column-text {
@@ -55,10 +64,20 @@
     font-size: 14px;
     color: #bababa;
     transition: .2s ease-in;
+    &--nowrap{
+      white-space: nowrap;
+    }
     &:hover{
       transition: .2s ease-in;
       color: #fff;
     }
+  }
+}
+#map{
+  border: none;
+  height: 200px;
+  & .ymaps-2-1-79-map ymaps, .ymaps-2-1-79-map ymaps:after, .ymaps-2-1-79-map ymaps:before{
+    border-radius: 10px;
   }
 }
 @media all and (max-width: 1000px) {
@@ -75,6 +94,7 @@
     }
 
     &__column {
+
       &:nth-child(1){
         grid-column: 1/2;
         grid-row: 1/3;

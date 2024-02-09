@@ -8,12 +8,11 @@
   }
   &__title{
     margin: 0 auto;
-    padding: 0 50px;
     max-width: 1033px;
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 768px) {
   .hero {
     &__wrap{
       margin-top: 16px;
