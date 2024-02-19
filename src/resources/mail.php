@@ -38,10 +38,10 @@ try {
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('sendmailform74@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('nonord1995@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('sendmailform74@gmail.com');
+  $mail->addAddress('nonord1995@gmail.com');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
