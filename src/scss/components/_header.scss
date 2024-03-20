@@ -3,7 +3,7 @@
     position: absolute;
     top: 73px;
     left: 94px;
-    right: 64px;
+    right: 94px;
     z-index: 2;
     display: flex;
     justify-content: space-between;
@@ -19,18 +19,36 @@
   }
 
   &__lang {
+    display: flex;
+    align-items: center;
   }
 
   &__lang-link {
-    display: inline-block;
-    padding: 0 12px;
+    display: flex;
+    align-items: center;
     font-family: Onest, sans-serif;
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    //border-right: 1px solid #e6e6e6;
+    & > span {
+      padding: 0 2px;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s ease-in;
+    }
+    &:hover > span {
+      border-bottom: 1px solid #e6e6e6;
+      transition: 0.2s ease-in;
+    }
+    &:not(:last-child):after {
+      content: "";
+      display: inline-block;
+      margin: 0 10px;
+      width: 1px;
+      height: 21px;
+      background-color: #e6e6e6;
+    }
   }
 }
 
@@ -65,6 +83,5 @@
       text-transform: uppercase;
       color: #fff;
     }
-
   }
 }

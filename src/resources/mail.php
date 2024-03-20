@@ -29,14 +29,11 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
   $mail->isSMTP();
   $mail->CharSet = "UTF-8";
-  $mail->SMTPAuth   = true;
+  $mail->SMTPAuth   = false;
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'sendmailform74@gmail.com'; // Логин на почте
-  $mail->Password   = 'ullvjvwqgqgnyldt'; // Пароль на почте
-  $mail->SMTPSecure = 'ssl';
-  $mail->Port       = 465;
+  $mail->Host       = 'robots.1gb.ru'; // SMTP сервера вашей почты
+  $mail->Port       = 25;
 
   $mail->setFrom('info@hl.kg', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
